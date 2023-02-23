@@ -59,3 +59,65 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 48px;
+    justify-content: space-between;
+    padding: 0 28px ;
+    &_logo {
+      &_img {
+        width: 35px;
+        height: 35px;
+      }
+      &_text {
+        font-size: 0.9rem;
+      }
+    }
+    &_toggle {
+      display: inline;
+      font-size: 2rem;
+      color: #eeeeee;
+      cursor: pointer;
+    }
+    &_close {
+      position: absolute;
+      right: 25px;
+      display: block;
+      font-size: 25px;
+      border-radius: 50%;
+      &:hover {
+        padding: 5px;
+        background-color: #ffae00;
+      }
+    }
+  }
+  .nav {
+    align-items: start;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: #25272b;
+    color: #eeeeee;
+    width: 60%;
+    height: 100vh;
+    padding: 24px 0;
+    z-index: 100;
+    transition: 0.5s;
+    border-radius: 0 0 0 50%;
+    &_show {
+      right: 0;
+    }
+    &_list {
+      display: flex;
+      flex-direction: column;
+      &_item{
+        margin: 1rem 0;
+        &_link {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

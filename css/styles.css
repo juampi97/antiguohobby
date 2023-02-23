@@ -9484,6 +9484,54 @@ ul {
           width: 100%;
           right: 0; }
 
+@media screen and (max-width: 768px) {
+  .header {
+    height: 48px;
+    justify-content: space-between;
+    padding: 0 28px; }
+    .header_logo_img {
+      width: 35px;
+      height: 35px; }
+    .header_logo_text {
+      font-size: 0.9rem; }
+    .header_toggle {
+      display: inline;
+      font-size: 2rem;
+      color: #eeeeee;
+      cursor: pointer; }
+    .header_close {
+      position: absolute;
+      right: 25px;
+      display: block;
+      font-size: 25px;
+      border-radius: 50%; }
+      .header_close:hover {
+        padding: 5px;
+        background-color: #ffae00; }
+  .nav {
+    align-items: start;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: #25272b;
+    color: #eeeeee;
+    width: 60%;
+    height: 100vh;
+    padding: 24px 0;
+    z-index: 100;
+    transition: 0.5s;
+    border-radius: 0 0 0 50%; }
+    .nav_show {
+      right: 0; }
+    .nav_list {
+      display: flex;
+      flex-direction: column; }
+      .nav_list_item {
+        margin: 1rem 0; }
+        .nav_list_item_link {
+          font-size: 1rem; } }
+
 .main-index .carousel-item {
   height: 90vh;
   background-position: center;
