@@ -1,0 +1,26 @@
+// Required bootstrap files
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+// Import variables generadas
+
+@import "./complements/variables";
+
+//Import bootstrap
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+// Import componentes
+
+@import "./components/generics";
+@import "./components/footer";
+@import "./components/nav";
+
+// Import pages
+
+@import "./pages/index";
+@import "./pages/empresa";
+@import "./pages/servicios";
+@import "./pages/producto";
+@import "./pages/contacto";

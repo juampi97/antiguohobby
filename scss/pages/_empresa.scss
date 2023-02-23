@@ -1,0 +1,22 @@
+.main-empresa {
+  width: 100vw;
+  height: 60vh;
+  & h1 {
+    font-size: 20px;
+    @media (min-width: 992px) {
+      font-size: 40px;
+    }
+  }
+}
+
+.empresa_mision{
+  &_bkg_img {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &_text {
+    height: 500px;
+  }
+}

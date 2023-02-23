@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.linea-sep{
+  &-rojo{
+    height: 5px;
+    background-color: #da291c;
+  }
+  &-azul{
+    height: 5px;
+    background-color: #003c71;
+  }
+}
+
+.fixedButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  &_img {
+    width: 50px;
+  }
+}
+
+
+

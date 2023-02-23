@@ -1,0 +1,20 @@
+// Create your own map colours
+$custom-colors: (
+  "azul": #003c71,
+  "rojo": #da291c,
+  "gris": #6c757d,
+  "blanco": #ffffff,
+  "negro": #000000,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Fonts
+
+$font-family-sans-serif: "Work Sans", sans-serif;
+
+$font-weight-light: 200;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
