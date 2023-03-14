@@ -9,3 +9,4 @@ toggleMenu.addEventListener("click", () => {
 closeMenu.addEventListener("click", () => {
   navMenu.classList.remove("nav_show");
 });
+
