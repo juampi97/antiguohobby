@@ -9585,6 +9585,13 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed; }
+  @media (max-width: 576px) {
+    .main_index {
+      background: linear-gradient(rgba(189, 189, 189, 0.55), rgba(187, 187, 187, 0.55)), url(../img/index/mobile.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed; } }
   .main_index_container {
     height: 80%;
     display: flex;
@@ -9759,10 +9766,20 @@ ul {
   background-attachment: fixed; }
   @media (max-width: 576px) {
     .main_servicios {
-      margin-top: 45px; } }
+      margin-top: 45px;
+      background: linear-gradient(rgba(189, 189, 189, 0.55), rgba(187, 187, 187, 0.55)), url(../img/servicio/mobile.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed; } }
   @media (min-width: 576px) and (max-width: 992px) {
     .main_servicios {
-      margin-top: 60px; } }
+      margin-top: 60px;
+      background: linear-gradient(rgba(189, 189, 189, 0.55), rgba(187, 187, 187, 0.55)), url(../img/servicio/main.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed; } }
   .main_servicios_container {
     height: 100%;
     display: flex;
@@ -9785,18 +9802,18 @@ ul {
       .main_servicios_container_containerText h1, .main_servicios_container_containerText .h1 {
         font-size: 5rem;
         font-weight: 500; }
-        @media (max-width: 992px) {
+        @media (min-width: 576px) and (max-width: 992px) {
           .main_servicios_container_containerText h1, .main_servicios_container_containerText .h1 {
-            font-size: 4rem;
+            font-size: 4.5rem;
             text-align: center; } }
         @media (max-width: 576px) {
           .main_servicios_container_containerText h1, .main_servicios_container_containerText .h1 {
-            font-size: 2.25rem;
+            font-size: 2.3rem;
             text-align: center; } }
       .main_servicios_container_containerText h3, .main_servicios_container_containerText .h3 {
         font-size: 2.5rem;
         font-weight: 400; }
-        @media (max-width: 992px) {
+        @media (min-width: 576px) and (max-width: 992px) {
           .main_servicios_container_containerText h3, .main_servicios_container_containerText .h3 {
             text-align: center;
             font-size: 1.5rem;
@@ -9804,7 +9821,7 @@ ul {
         @media (max-width: 576px) {
           .main_servicios_container_containerText h3, .main_servicios_container_containerText .h3 {
             text-align: center;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 500; } }
       @media (max-width: 992px) {
         .main_servicios_container_containerText {
@@ -9929,17 +9946,69 @@ ul {
       .preguntas_container_buttonContacto:hover {
         background-color: #ffc107; } }
 
-.main_producto {
-  margin-top: 96px;
+.main_productos {
+  margin-top: 60px;
   width: 100%;
-  min-height: 80vh; }
-  @media (max-width: 991px) {
-    .main_producto {
-      margin-bottom: 80px; } }
-
-@media (min-width: 992px) {
-  .producto {
-    min-height: 600px; } }
+  height: 60vh;
+  background: linear-gradient(rgba(189, 189, 189, 0.55), rgba(187, 187, 187, 0.55)), url(../img/proyectos/main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
+  @media (max-width: 576px) {
+    .main_productos {
+      margin-top: 45px;
+      background: linear-gradient(rgba(189, 189, 189, 0.55), rgba(187, 187, 187, 0.55)), url(../img/proyectos/mobile.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed; } }
+  .main_productos_container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 992px) {
+      .main_productos_container {
+        flex-direction: column; } }
+    .main_productos_container_containerText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      height: 100%; }
+      @media (max-width: 992px) {
+        .main_productos_container_containerText {
+          width: 100%; } }
+      .main_productos_container_containerText h1, .main_productos_container_containerText .h1 {
+        font-size: 5rem;
+        font-weight: 500; }
+        @media (min-width: 576px) and (max-width: 992px) {
+          .main_productos_container_containerText h1, .main_productos_container_containerText .h1 {
+            font-size: 4rem;
+            text-align: center; } }
+        @media (max-width: 576px) {
+          .main_productos_container_containerText h1, .main_productos_container_containerText .h1 {
+            font-size: 2rem;
+            text-align: center; } }
+      .main_productos_container_containerText h3, .main_productos_container_containerText .h3 {
+        font-size: 2.5rem;
+        font-weight: 400; }
+        @media (min-width: 576px) and (max-width: 992px) {
+          .main_productos_container_containerText h3, .main_productos_container_containerText .h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 500; } }
+        @media (max-width: 576px) {
+          .main_productos_container_containerText h3, .main_productos_container_containerText .h3 {
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 500; } }
+      @media (max-width: 992px) {
+        .main_productos_container_containerText {
+          width: 100%; } }
 
 .contactoDatos_container {
   width: 100%;
@@ -9949,6 +10018,13 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed; }
+  @media (min-width: 576px) and (max-width: 992px) {
+    .contactoDatos_container {
+      background: linear-gradient(rgba(189, 189, 189, 0.7), rgba(187, 187, 187, 0.7)), url(../img/contacto/mobile.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed; } }
   .contactoDatos_container h2, .contactoDatos_container .h2 {
     font-size: 4rem;
     font-weight: 700;

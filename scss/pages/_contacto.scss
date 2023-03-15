@@ -10,6 +10,17 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    @media (min-width: 576px) and (max-width: 992px) {
+        background: linear-gradient(
+            rgba(189, 189, 189, 0.7),
+            rgba(187, 187, 187, 0.7)
+          ),
+          url(../img/contacto/mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+      }
     & h2 {
         font-size: 4rem;
         font-weight: 700;

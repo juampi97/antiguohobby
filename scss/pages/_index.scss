@@ -38,6 +38,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  @media (max-width: 576px){
+    background: linear-gradient(
+      rgba(189, 189, 189, 0.55),
+      rgba(187, 187, 187, 0.55)
+    ),
+    url(../img/index/mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  }
   &_container {
     height: 80%;
     display: flex;

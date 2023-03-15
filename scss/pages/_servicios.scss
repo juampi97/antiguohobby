@@ -13,9 +13,27 @@
   background-attachment: fixed;
   @media (max-width: 576px) {
     margin-top: 45px;
+    background: linear-gradient(
+      rgba(189, 189, 189, 0.55),
+      rgba(187, 187, 187, 0.55)
+    ),
+    url(../img/servicio/mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   }
   @media (min-width: 576px) and (max-width: 992px) {
     margin-top: 60px;
+    background: linear-gradient(
+      rgba(189, 189, 189, 0.55),
+      rgba(187, 187, 187, 0.55)
+    ),
+    url(../img/servicio/main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   }
   &_container {
     height: 100%;
@@ -39,26 +57,26 @@
       & h1 {
         font-size: 5rem;
         font-weight: 500;
-        @media (max-width: 992px) {
-          font-size: 4rem;
+        @media (min-width: 576px) and (max-width: 992px) {
+          font-size: 4.5rem;
           text-align: center;
         }
         @media (max-width: 576px) {
-          font-size: 2.25rem;
+          font-size: 2.3rem;
           text-align: center;
         }
       }
       & h3 {
         font-size: 2.5rem;
         font-weight: 400;
-        @media (max-width: 992px) {
+        @media (min-width: 576px) and (max-width: 992px) {
           text-align: center;
           font-size: 1.5rem;
           font-weight: 500;
         }
         @media (max-width: 576px) {
           text-align: center;
-          font-size: 1.1rem;
+          font-size: 1rem;
           font-weight: 500;
         }
       }
