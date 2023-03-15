@@ -82,89 +82,112 @@
     <!-- Boton wapp  -->
     <div class="wappLogoFixed">
       <a href="https://wa.me/541162102695" target="_blank"
-        ><img src="./img/wapp.png" alt="logo whatsapp" class="wappLogoFixed_img"
+        ><img
+          src="./img/wapp.png"
+          alt="logo whatsapp"
+          class="wappLogoFixed_img"
       /></a>
     </div>
     <!-- Contacto -->
-        <!-- Datos de contacto -->
-        <section class="contacto_datos_container my-5 text-center">
-          <div
-            class="container-fluid d-flex flex-column justify-content-around align-items-center"
-          >
-            <div class="col-12 mt-2 mb-5">
-              <h2>CANALES DE ATENCIÓN</h2>
-            </div>
-            <div
-              class="col-10 d-flex flex-column flex-lg-row justify-content-center align-items-center"
-            >
-              <div class="col-10 col-lg-4 mb-3 mb-lg-0 text-center">
-                <h4>Telefono</h4>
-                <p>11-9999-9999</p>
-              </div>
-              <div class="col-10 col-lg-4 text-center">
-                <h4>mail</h4>
-                <p>mail@mail.com</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- Div -->
-        <div class="linea-sep-azul"></div>
-        <!-- Form contacto -->
-        <main
-          class="contacto_form_container container-fluid d-flex flex-column align-items-center justify-content-around my-5"
+    <!-- Datos de contacto -->
+    <main
+      class="contactoDatos_container text-center d-flex justify-content-center"
+    >
+      <div
+        class="container-fluid d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="col-12 mt-2 mb-5">
+          <h2>CANALES DE ATENCIÓN</h2>
+        </div>
+        <div
+          class="col-10 d-flex flex-column flex-lg-row justify-content-center align-items-center"
         >
-          <div class="col-10 mb-4 text-center">
-            <h2>CONTACTO</h2>
+          <div class="col-10 col-lg-4 mb-3 mb-lg-0 text-center">
+            <h4>Telefono</h4>
+            <a href="https://wa.me/541162102695" target="_blank"
+              ><p class="text-center text-negro">(5411)-6210-2695</p></a
+            >
           </div>
-          <div class="col-10 col-lg-5 mb-2">
-            <form action="">
-              <div class="form-floating mt-2 mb-3">
-                <input
-                  type="text"
-                  name="nombre"
-                  class="form-control"
-                  id="formName"
-                  placeholder="Nombre"
-                />
-                <label for="floatingPassword">Nombre y Apellido</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input
-                  type="email"
-                  name="email"
-                  class="form-control"
-                  id="formMail"
-                  placeholder="nombre@email.com"
-                />
-                <label for="floatingInput">Email</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input
-                  type="telefono"
-                  name="telefono"
-                  class="form-control"
-                  id="formTelefono"
-                  placeholder="11-9999-9999"
-                />
-                <label for="floatingInput">Telefono</label>
-              </div>
-              <div class="form-floating mb-3">
-                <textarea
-                  class="form-control"
-                  name="Mensaje"
-                  placeholder="Mensaje"
-                  id="floatingTextarea2"
-                  style="height: 100px"
-                ></textarea>
-                <label for="floatingTextarea2">Mensaje</label>
-              </div>
-              <div class="col-12 d-flex justify-content-around align-items-center">
-                <button type="button" class="btn btn-warning"><p class="m-0 px-3 py-1">Enviar</p>
-                  </button>
-              </div>
-            </form>
+          <div class="col-11 col-lg-4 text-center">
+            <h4>mail</h4>
+            <a href="mailto: juampicalabro97@gmail.com" class="text-center text-negro"
+              >juampicalabro97@gmail.com</a
+            >
           </div>
-        </main>
+        </div>
+      </div>
+    </main>
+    <!-- Formas contacto -->
+    <section class="formasContacto_container container-fluid d-flex flex-column flex-lg-row p-0">
+      <div class="col-12 col-lg-4 p-5 bg-naranja-ligth text-dark">
+        <h2 class="pb-2">Contactanos</h2>
+        <p>Podes escribirnos por medio del formulario de contacto, mail o whatsapp. Nos comunicaremos a la brevedad.</p>
+      </div>
+      <div class="col-12 col-lg-4 p-5 bg-dark-ligth text-white">
+        <h2 class="pb-2">Videollamadas</h2>
+        <p>Podemos coordinar una videollamada para analisis de proyectos y responder dudas.</p>
+      </div>
+      <div class="col-12 col-lg-4 p-5 bg-naranja-ligth text-dark">
+        <h2 class="pb-2">Horario</h2>
+        <p> Lunes a viernes de 9 a 18 hs.</p>
+      </div>
+    </section>
+    <!-- Form contacto -->
+    <section
+      class="contacto_form_container container-fluid d-flex flex-column align-items-center justify-content-around my-5"
+    >
+      <div class="col-10 mb-4 text-center">
+        <h2>CONTACTO</h2>
+      </div>
+      <div class="col-10 col-lg-5 mb-2">
+        <form action="">
+          <div class="form-floating mt-2 mb-3">
+            <input
+              type="text"
+              name="nombre"
+              class="form-control"
+              id="formName"
+              placeholder="Nombre"
+            />
+            <label for="floatingPassword">Nombre y Apellido</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="formMail"
+              placeholder="nombre@email.com"
+            />
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input
+              type="telefono"
+              name="telefono"
+              class="form-control"
+              id="formTelefono"
+              placeholder="11-9999-9999"
+            />
+            <label for="floatingInput">Telefono</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea
+              class="form-control"
+              name="Mensaje"
+              placeholder="Mensaje"
+              id="floatingTextarea2"
+              style="height: 100px"
+            ></textarea>
+            <label for="floatingTextarea2">Mensaje</label>
+          </div>
+          <div class="col-12 d-flex justify-content-around align-items-center">
+            <button type="button" class="btn btn-warning">
+              <p class="m-0 px-3 py-1">Enviar</p>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
   </body>
 </html>

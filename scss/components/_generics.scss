@@ -7,20 +7,20 @@ a {
   text-decoration: none;
 }
 
-ul{
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.linea-sep{
-  &-rojo{
+.linea-sep {
+  &-negro {
     height: 5px;
-    background-color: #da291c;
+    background-color: #272727;
   }
-  &-azul{
+  &-naranja {
     height: 5px;
-    background-color: #003c71;
+    background-color: #ffa600;
   }
 }
 
@@ -34,5 +34,10 @@ ul{
   }
 }
 
+.bg-naranja-ligth {
+  background-color: rgba(#ffa600, 0.9);
+}
 
-
+.bg-dark-ligth {
+  background-color: rgba(#272727, 0.9);
+}
