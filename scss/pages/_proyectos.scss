@@ -14,14 +14,14 @@
   @media (max-width: 576px) {
     margin-top: 45px;
     background: linear-gradient(
-      rgba(189, 189, 189, 0.55),
-      rgba(187, 187, 187, 0.55)
-    ),
-    url(../img/proyectos/mobile.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+        rgba(189, 189, 189, 0.55),
+        rgba(187, 187, 187, 0.55)
+      ),
+      url(../img/proyectos/mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
   }
 
   &_container {
@@ -71,6 +71,81 @@
       }
       @media (max-width: 992px) {
         width: 100%;
+      }
+    }
+  }
+}
+
+.proyectos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  &_container {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    @media (max-width: 572px) {
+      width: 90%;
+    }
+    @media (min-width: 572px) and (max-width: 992px) {
+      width: 85%;
+    }
+    &_card {
+      width: 45%;
+      margin: 20px;
+      border-radius: 6px;
+      overflow: hidden;
+      background-color: white;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      cursor: default;
+      transition: all 400ms ease;
+      @media (max-width: 572px) {
+        width: 90%;
+      }
+      @media (min-width: 572px) and (max-width: 992px) {
+        width: 42%;
+      }
+      @media (min-width: 992px) {
+        &:hover {
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+          transform: translateY(-3%);
+        }
+      }
+      & img {
+        width: 100%;
+        height: 210px;
+      }
+      & .contenido {
+        padding: 15px;
+        text-align: center;
+        & p {
+          line-height: 1.5;
+          min-height: 50px;
+          color: #6a6a6a;
+        }
+        & h3 {
+          font-weight: 500;
+          margin-bottom: 15px;
+        }
+        & a {
+          text-decoration: none;
+          display: inline-block;
+          padding: 10px;
+          margin-top: 10px;
+          color: #2b2b2b;
+          border: 2px solid #a0a0a0;
+          border-radius: 4px;
+          @media (min-width: 992px) {
+            &:hover {
+              background-color: #a0a0a0;
+              color: white;
+            }
+          }
+        }
       }
     }
   }
