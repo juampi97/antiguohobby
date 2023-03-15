@@ -1,0 +1,11 @@
+.copy {
+    height: 30px;
+    background-color: rgb(20, 20, 20);
+    &_txt {
+      font-size: 0.4rem;
+      color: #d1d1d1;
+      @media (min-width: 772px) {
+        font-size: 0.8rem;
+      }
+    }
+  }

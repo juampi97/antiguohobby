@@ -9440,6 +9440,19 @@ ul {
 .bg-dark-ligth {
   background-color: rgba(39, 39, 39, 0.9); }
 
+.bg-dark-strong {
+  background-color: #181818; }
+
+.copy {
+  height: 30px;
+  background-color: #141414; }
+  .copy_txt {
+    font-size: 0.4rem;
+    color: #d1d1d1; }
+    @media (min-width: 772px) {
+      .copy_txt {
+        font-size: 0.8rem; } }
+
 .header {
   display: flex;
   background-color: #25272b;
