@@ -9443,6 +9443,10 @@ ul {
 .bg-dark-strong {
   background-color: #181818; }
 
+.accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: rgba(255, 166, 0, 0.75); }
+
 .copy {
   height: 30px;
   background-color: #141414; }
@@ -9743,6 +9747,187 @@ ul {
 .accordion-button:not(.collapsed) {
   color: inherit;
   background-color: rgba(255, 166, 0, 0.75); }
+
+.main_servicios {
+  margin-top: 60px;
+  width: 100%;
+  height: 60vh;
+  background: linear-gradient(rgba(189, 189, 189, 0.55), rgba(187, 187, 187, 0.55)), url(../img/servicio/main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
+  @media (max-width: 576px) {
+    .main_servicios {
+      margin-top: 45px; } }
+  @media (min-width: 576px) and (max-width: 992px) {
+    .main_servicios {
+      margin-top: 60px; } }
+  .main_servicios_container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 992px) {
+      .main_servicios_container {
+        flex-direction: column; } }
+    .main_servicios_container_containerText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 55%;
+      height: 100%; }
+      @media (max-width: 992px) {
+        .main_servicios_container_containerText {
+          width: 100%; } }
+      .main_servicios_container_containerText h1, .main_servicios_container_containerText .h1 {
+        font-size: 5rem;
+        font-weight: 500; }
+        @media (max-width: 992px) {
+          .main_servicios_container_containerText h1, .main_servicios_container_containerText .h1 {
+            font-size: 4rem;
+            text-align: center; } }
+        @media (max-width: 576px) {
+          .main_servicios_container_containerText h1, .main_servicios_container_containerText .h1 {
+            font-size: 2.25rem;
+            text-align: center; } }
+      .main_servicios_container_containerText h3, .main_servicios_container_containerText .h3 {
+        font-size: 2.5rem;
+        font-weight: 400; }
+        @media (max-width: 992px) {
+          .main_servicios_container_containerText h3, .main_servicios_container_containerText .h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 500; } }
+        @media (max-width: 576px) {
+          .main_servicios_container_containerText h3, .main_servicios_container_containerText .h3 {
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 500; } }
+      @media (max-width: 992px) {
+        .main_servicios_container_containerText {
+          width: 100%; } }
+
+.planesContainer {
+  width: 100%;
+  min-height: 80vh;
+  background-color: whitesmoke; }
+
+.pricing-wrap {
+  background-color: whitesmoke;
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 50px 0; }
+
+.pricing-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.pricing-table {
+  width: 45%;
+  margin-bottom: 25px; }
+  @media (max-width: 600px) {
+    .pricing-table {
+      width: 80%; } }
+  @media (min-width: 600px) and (max-width: 992px) {
+    .pricing-table {
+      width: 40%; } }
+  @media (min-width: 992px) {
+    .pricing-table {
+      transition: transform 0.5s ease; }
+      .pricing-table:hover {
+        transform: scale(1.07);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); } }
+  .pricing-table-cont {
+    background-color: white;
+    text-align: center;
+    min-height: 500px; }
+    .pricing-table-cont-head {
+      color: #2c2c2c;
+      padding: 50px 0; }
+      .pricing-table-cont-head h2, .pricing-table-cont-head .h2 {
+        font-size: 25px;
+        letter-spacing: 2px;
+        font-weight: 700; }
+      .pricing-table-cont-head h3, .pricing-table-cont-head .h3 {
+        font-size: 50px;
+        font-weight: 400;
+        display: inline; }
+        .pricing-table-cont-head h3 sup, .pricing-table-cont-head .h3 sup {
+          font-size: 20px;
+          font-weight: 500;
+          color: #abb8c0; }
+        .pricing-table-cont-head h3 sub, .pricing-table-cont-head .h3 sub {
+          font-size: 15px;
+          font-weight: 500;
+          color: #abb8c0; }
+      .pricing-table-cont-head-mod {
+        color: #ffa600;
+        padding: 50px 0; }
+        .pricing-table-cont-head-mod h2, .pricing-table-cont-head-mod .h2 {
+          font-size: 25px;
+          letter-spacing: 2px;
+          font-weight: 700; }
+        .pricing-table-cont-head-mod h3, .pricing-table-cont-head-mod .h3 {
+          font-size: 50px;
+          font-weight: 400;
+          display: inline; }
+          .pricing-table-cont-head-mod h3 sup, .pricing-table-cont-head-mod .h3 sup {
+            font-size: 20px;
+            font-weight: 500;
+            color: #abb8c0; }
+          .pricing-table-cont-head-mod h3 sub, .pricing-table-cont-head-mod .h3 sub {
+            font-size: 15px;
+            font-weight: 500;
+            color: #abb8c0; }
+  .pricing-table-list li {
+    background-color: #f1f3f5;
+    padding: 10px 0; }
+    .pricing-table-list li:nth-child(2n) {
+      background-color: white; }
+  .pricing-table-button {
+    display: block;
+    width: 100%;
+    background-color: #3a3a3a;
+    color: white;
+    font-size: 1.25rem;
+    padding: 30px 0; }
+
+.preguntas_container {
+  display: flex; }
+  .preguntas_container h2, .preguntas_container .h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.5dvh; }
+    @media (max-width: 576px) {
+      .preguntas_container h2, .preguntas_container .h2 {
+        letter-spacing: 0dvh;
+        font-size: 2rem;
+        text-align: center; } }
+    @media (min-width: 577px) and (max-width: 992px) {
+      .preguntas_container h2, .preguntas_container .h2 {
+        text-align: center;
+        font-size: 3rem; } }
+  .preguntas_container_buttonContacto {
+    padding: 1.75% 1.75%;
+    font-size: 1rem;
+    font-weight: 400; }
+    @media (max-width: 576px) {
+      .preguntas_container_buttonContacto {
+        padding: 5% 5%;
+        font-size: 0.9rem; } }
+    @media (min-width: 577px) and (max-width: 992px) {
+      .preguntas_container_buttonContacto {
+        padding: 2% 2%;
+        font-size: 1rem; } }
+    @media (min-width: 992px) {
+      .preguntas_container_buttonContacto:hover {
+        background-color: #ffc107; } }
 
 .main_producto {
   margin-top: 96px;

@@ -45,3 +45,8 @@ ul {
 .bg-dark-strong {
   background-color: #181818;
 }
+
+.accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: rgba(#ffa600, 0.75);
+}
