@@ -2,13 +2,13 @@
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
 $telefono = $_POST['telefono'];
-$mensaje = $_POST['mensaje'];
+$mensajes = $_POST['mensajes'];
 
 $mensaje = "Este mensaje fue enviado por " . $nombre . "\r\n";
-$mensaje = "Su e-mail es: " . $email . "\r\n";
-$mensaje = "Su telefono es: " . $telefono . "\r\n";
-$mensaje = "Mensaje: " . $_POST['mensaje'] . "\r\n";
-$mensaje = "Enviado el " . date('d/m/Y', time());
+$mensaje .= "Su e-mail es: " . $email . "\r\n";
+$mensaje .= "Su telefono es: " . $telefono . "\r\n";
+$mensaje .= "Mensaje: " . $_POST['mensajes'] . "\r\n";
+$mensaje .= "Enviado el " . date('d/m/Y', time());
 
 $para = 'juampicalabro97@gmail.com';
 $asunto = 'Mensaje desde antiguohobby.com.ar';
