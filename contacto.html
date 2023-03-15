@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/logo.png" />
+    <!-- Css propio -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Js Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Js icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Js propio -->
+    <script defer src="./js/nav.js"></script>
+    <title>AntiguoHobby</title>
+  </head>
+  <body>
+    <header class="header fixed-top">
+      <div class="header_logo">
+        <img
+          class="header_logo_img"
+          src="./img/logo.jpg"
+          alt="logo antiguohobby"
+        />
+        <a href="./index.html" class="header_logo_text">Antiguohobby</a>
+      </div>
+      <nav class="nav" id="navMenu">
+        <ion-icon
+          name="close-outline"
+          class="header_close"
+          id="closeMenu"
+        ></ion-icon>
+        <ul class="nav_list">
+          <li class="nav_list_item">
+            <a href="./index.html" class="nav_list_item_link">Home</a>
+          </li>
+          <li class="nav_list_item">
+            <a href="" class="nav_list_item_link">Servicios</a>
+          </li>
+          <li class="nav_list_item">
+            <a href="" class="nav_list_item_link">Proyectos</a>
+          </li>
+          <li class="nav_list_item">
+            <a
+              href="https://www.diseñoseimpresiones3d.com.ar"
+              target="_blank"
+              class="nav_list_item_link"
+              >Impresion 3D</a
+            >
+          </li>
+          <li class="nav_list_item">
+            <a href="./contacto.html" class="nav_list_item_link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <ion-icon
+        name="menu-outline"
+        class="header_toggle"
+        id="toggleMenu"
+      ></ion-icon>
+    </header>
+    <!-- Boton wapp  -->
+    <div class="wappLogoFixed">
+      <a href="https://wa.me/541162102695" target="_blank"
+        ><img src="./img/wapp.png" alt="logo whatsapp" class="wappLogoFixed_img"
+      /></a>
+    </div>
+    <!-- Contacto -->
+        <!-- Datos de contacto -->
+        <section class="contacto_datos_container my-5 text-center">
+          <div
+            class="container-fluid d-flex flex-column justify-content-around align-items-center"
+          >
+            <div class="col-12 mt-2 mb-5">
+              <h2>CANALES DE ATENCIÓN</h2>
+            </div>
+            <div
+              class="col-10 d-flex flex-column flex-lg-row justify-content-center align-items-center"
+            >
+              <div class="col-10 col-lg-4 mb-3 mb-lg-0 text-center">
+                <h4>Telefono</h4>
+                <p>11-9999-9999</p>
+              </div>
+              <div class="col-10 col-lg-4 text-center">
+                <h4>mail</h4>
+                <p>mail@mail.com</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Div -->
+        <div class="linea-sep-azul"></div>
+        <!-- Form contacto -->
+        <main
+          class="contacto_form_container container-fluid d-flex flex-column align-items-center justify-content-around my-5"
+        >
+          <div class="col-10 mb-4 text-center">
+            <h2>CONTACTO</h2>
+          </div>
+          <div class="col-10 col-lg-5 mb-2">
+            <form action="">
+              <div class="form-floating mt-2 mb-3">
+                <input
+                  type="text"
+                  name="nombre"
+                  class="form-control"
+                  id="formName"
+                  placeholder="Nombre"
+                />
+                <label for="floatingPassword">Nombre y Apellido</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="formMail"
+                  placeholder="nombre@email.com"
+                />
+                <label for="floatingInput">Email</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="telefono"
+                  name="telefono"
+                  class="form-control"
+                  id="formTelefono"
+                  placeholder="11-9999-9999"
+                />
+                <label for="floatingInput">Telefono</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control"
+                  name="Mensaje"
+                  placeholder="Mensaje"
+                  id="floatingTextarea2"
+                  style="height: 100px"
+                ></textarea>
+                <label for="floatingTextarea2">Mensaje</label>
+              </div>
+              <div class="col-12 d-flex justify-content-around align-items-center">
+                <button type="button" class="btn btn-warning"><p class="m-0 px-3 py-1">Enviar</p>
+                  </button>
+              </div>
+            </form>
+          </div>
+        </main>
+  </body>
+</html>

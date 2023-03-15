@@ -115,36 +115,111 @@
 
 .servicios_container {
   width: 100%;
-  height: 80vh;
-  background-color: aliceblue;
+  min-height: 80vh;
+  background-color: whitesmoke;
   &_animationContainer {
     &_text {
       padding-right: 15%;
       padding-top: 11%;
+      @media (max-width: 576px) {
+        padding-right: 5%;
+        padding-top: 10%;
+      }
+      @media (min-width: 577px) and (max-width: 992px) {
+        padding-right: 10%;
+        padding-top: 10%;
+      }
       & h2 {
         font-size: 4rem;
         font-weight: 700;
         letter-spacing: 1dvh;
-        &:hover {
-          margin-left: 5%;
-          background-color: #ffa600;
+        @media (max-width: 576px) {
+          font-size: 2.75rem;
+        }
+        @media (min-width: 577px) and (max-width: 992px) {
+          font-size: 3rem;
         }
       }
       & h5 {
         font-size: 3rem;
         font-weight: 300;
         padding: 3% 0;
-        &:hover {
-          margin-left: 10%;
-          font-weight: 500;
-          background-color: #ffa600;
+        @media (max-width: 576px) {
+          font-size: 1.5rem;
+        }
+        @media (min-width: 577px) and (max-width: 992px) {
+          font-size: 2.5rem;
+        }
+        @media (min-width: 992px) {
+          &:hover {
+            margin-left: 20%;
+            font-weight: 500;
+            background-color: #ffa600;
+          }
         }
       }
     }
   }
-  // &_textContainer{
-
-  // }
+  &_textContainer {
+    padding: 0 15%;
+    @media (max-width: 576px) {
+      padding: 0 10%;
+    }
+    @media (min-width: 577px) and (max-width: 992px) {
+      padding: 2.5% 20%;
+    }
+    & p {
+      font-size: 1.25rem;
+      font-weight: 400;
+      padding: 3% 0;
+      color: #444444;
+      @media (max-width: 576px) {
+        font-size: 0.9rem;
+      }
+      @media (min-width: 577px) and (max-width: 992px) {
+        font-size: 1rem;
+      }
+    }
+    &_button {
+      padding: 2% 4.5%;
+      font-size: 1.25rem;
+      font-weight: 400;
+      @media (max-width: 576px) {
+        padding: 4% 7%;
+        font-size: 1rem;
+      }
+      @media (min-width: 577px) and (max-width: 992px) {
+        padding: 2% 4.5%;
+        font-size: 1.25rem;
+      }
+      @media (min-width: 992px) {
+        &:hover {
+          background-color: #ffc107;
+        }
+      }
+    }
+  }
 }
 
+.aboutUs_container {
+  display: flex;
+  & h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1dvh;
+    @media (max-width: 576px) {
+      letter-spacing: 0dvh;
+      font-size: 2.75rem;
+      text-align: center;
+    }
+    @media (min-width: 577px) and (max-width: 992px) {
+      text-align: center;
+      font-size: 3rem;
+    }
+  }
+}
 
+.accordion-button:not(.collapsed) {
+  color: inherit;
+  background-color: rgba(#ffa600, 0.75);
+}

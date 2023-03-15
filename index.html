@@ -42,7 +42,7 @@
           src="./img/logo.jpg"
           alt="logo antiguohobby"
         />
-        <a href="" class="header_logo_text">Antiguohobby</a>
+        <a href="./index.html" class="header_logo_text">Antiguohobby</a>
       </div>
       <nav class="nav" id="navMenu">
         <ion-icon
@@ -52,19 +52,24 @@
         ></ion-icon>
         <ul class="nav_list">
           <li class="nav_list_item">
-            <a href="" class="nav_list_item_link">Home</a>
+            <a href="./index.html" class="nav_list_item_link">Home</a>
           </li>
           <li class="nav_list_item">
-            <a href="" class="nav_list_item_link">About us</a>
+            <a href="" class="nav_list_item_link">Servicios</a>
           </li>
           <li class="nav_list_item">
-            <a href="" class="nav_list_item_link">Diseño Web</a>
+            <a href="" class="nav_list_item_link">Proyectos</a>
           </li>
           <li class="nav_list_item">
-            <a href="" class="nav_list_item_link">Hosting</a>
+            <a
+              href="https://www.diseñoseimpresiones3d.com.ar"
+              target="_blank"
+              class="nav_list_item_link"
+              >Impresion 3D</a
+            >
           </li>
           <li class="nav_list_item">
-            <a href="" class="nav_list_item_link">Contacto</a>
+            <a href="./contacto.html" class="nav_list_item_link">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -74,6 +79,12 @@
         id="toggleMenu"
       ></ion-icon>
     </header>
+    <!-- Boton wapp  -->
+    <div class="wappLogoFixed">
+      <a href="https://wa.me/541162102695" target="_blank"
+        ><img src="./img/wapp.png" alt="logo whatsapp" class="wappLogoFixed_img"
+      /></a>
+    </div>
     <main class="main_index">
       <div class="main_index_container">
         <div class="main_index_container_containerText">
@@ -152,17 +163,202 @@
         class="servicios_container_animationContainer bg-dark text-end text-white h-100 w-100 w-lg-50"
       >
         <div class="servicios_container_animationContainer_text">
-          <div class="servicios" style="--clr:white">
-            <h2 class="mb-5">SERVICIOS</h2>
-          </div>
+          <h2 class="mb-3 mb-lg-5">NOSOTROS</h2>
           <h5>Desarrollo</h5>
-          <h5>Optimización</h5>
+          <h5>Dominios</h5>
+          <h5>Hosting</h5>
           <h5>Marketing</h5>
-          <h5>Mantenimiento</h5>
+          <h5 class="mb-5">Mantenimiento</h5>
         </div>
       </div>
-      <div class="servicios_container_textContainer h-100 w-100 w-lg-50">
-        <p>text</p>
+      <div
+        class="servicios_container_textContainer d-flex flex-column align-items-start justify-content-center w-100 w-lg-50 px-5 pb-4 pb-md-5"
+      >
+        <p class="mb-0 pt-4">
+          Somos una empresa especializada en el diseño y desarrollo de sitios
+          web personalizados para empresas y particulares. Nuestro equipo de
+          expertos en diseño web, desarrollo y marketing digital se encarga de
+          crear sitios web modernos y funcionales que destacan entre la
+          competencia.
+        </p>
+        <p class="mb-2 mb-lg-5">
+          En AntiguoHobby, nos enfocamos en proporcionar a nuestros clientes un
+          servicio excepcional y resultados de alta calidad. Si está buscando
+          una empresa de desarrollo web confiable y profesional, ¡contáctenos
+          hoy mismo!
+        </p>
+        <a
+          href="./contacto.html"
+          class="servicios_container_textContainer_button text-dark rounded-3 border border-3 border-warning"
+          >Contactanos</a
+        >
+      </div>
+    </section>
+    <section
+      class="aboutUs_container container-fluid d-flex flex-column align-items-center pb-4"
+    >
+      <h2 class="col-9 mt-5 mb-4">SERVICIOS</h2>
+      <div class="aboutUs_container col-10 col-lg-7 mb-5">
+        <div
+          class="accordion accordion-flush col-12"
+          id="accordionFlushExample"
+        >
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Diseño web
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  Utilizamos lo ultimo en tecnología disponible para el diseño
+                  de landing pages, sitios web institucionales, e-comerce y
+                  catalogo de productos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Diseños Responsive
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  Nuestros diseños se adaptan a todos los dispositivos móviles:
+                  notebooks, tablets, celulares.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                SEO
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  Utilizamos un conjunto de estrategias y técnicas de
+                  optimización que se hacen que el sitio web aparezca
+                  orgánicamente en buscadores de Internet como Google, Yahoo o
+                  Youtube.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                Dominio
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <h5>Instalacion</h5>
+                <p>
+                  Instalamos y configuramos el dominio para que en minutos el
+                  sitio se muestre en los buscadores
+                </p>
+                <h5>Dominio .com</h5>
+                <p>Podra hacerte ver de forma global</p>
+                <h5>Dominio .com.ar</h5>
+                <p>
+                  Tu marca podrá tener mayor alcance dentro de la Argentina. Los
+                  navegadores como Google Argentina, le dan mayor importancia a
+                  esta clase de dominio.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                Hosting
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  Es necesario contratar un servicio de hosting que cubra con
+                  los requerimientos de tu sitio web. Los servidores son
+                  empresas que almacenan computadoras con discos rígidos (en
+                  donde son alojados los sitios web), y cada una está equipada
+                  con distinto hardware.
+                </p>
+                <p>
+                  Para elegir correctamente el plan, te asesoramos con nuestro
+                  soporte técnico, que te pedirá una serie de datos para poder
+                  darte su opinión.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
