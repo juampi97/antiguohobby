@@ -1,18 +1,17 @@
 <?php
   // Verificar si se recibieron los datos del formulario
-  if(isset($_POST['nombre']) && isset($_POST['email']) && isset($_POST['mensaje']) && isset($_POST['telefono'])) {
+  if(isset($_POST['nombre']) && isset($_POST['email']) && isset($_POST['mensaje'])) {
     // Asignar los valores de los campos del formulario a variables
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
     $mensaje = $_POST['mensaje'];
-    $telefono = $_POST['telefono'];
 
     // Realizar validaciones si es necesario
 
     // Enviar un correo electrónico
     $destinatario = 'juampicalabro97@gmail.com';
     $asunto = 'Mensaje enviado desde el formulario de contacto de antiguohobby';
-    $mensaje = "Nombre: $nombre\nEmail: $email\nMensaje: $mensaje\nTelefono: $telefono";
+    $mensaje = "Nombre: $nombre\nEmail: $email\nMensaje: $mensaje";
     $cabeceras = "From: $email\r\nReply-To: $email\r\n";
     mail($destinatario, $asunto, $mensaje, $cabeceras);
 
