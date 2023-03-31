@@ -5,6 +5,22 @@ $email = $_POST['email'];
 $mensaje = $_POST['mensaje'];
 $telefono = $_POST['telefono'];
 
+// Captcha
+
+$ip = $_SERVER['REMOTE_ADDR'];
+$captcha = $_POST['g-recaptcha-response'];
+$secretkey = "6LeV8UolAAAAAKD4rmOAcTLhUzM8ItIiHNhYqnfF";
+$respuesta = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretkey&response=$captcha&remoteip=$ip");
+
+$response = json_decode($respuesta, TRUE);
+
+ if($response['success'] == FALSE) {
+   echo '<script type="text/javascript">alert("Por favor verifícame el captcha, sino pensaremos que eres un robot.")</script>';
+   echo '<script type="text/javascript">window.location = "./contacto.html"</script>';
+ }
+
+// Mensaje
+
 $cuerpoMensaje = <<<HTML
 <h2>Mail desde antiguohobby</h2>
 <h4>De:</h4>
@@ -38,8 +54,8 @@ try {
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('juampicalabro97@gmail.com', 'Anitguohobby');
-    $mail->addAddress('juampicalabro97@gmail.com', 'Anitguohobby');     //Add a recipient
+    $mail->setFrom('juampicalabro97@gmail.com', 'Antiguohobby');
+    $mail->addAddress('juampicalabro97@gmail.com', 'Antiguohobby');     //Add a recipient
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
@@ -47,9 +63,11 @@ try {
     // $mail->Body    = $cuerpoMensaje;
     $mail->msgHTML($cuerpoMensaje);
     $mail->send();
+    echo '<script type="text/javascript">alert("Gracias por tu consulta. En breve nos pondremos en contacto.")</script>';
     echo '<script type="text/javascript">window.location = "./index.html"</script>';
   } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo '<script type="text/javascript">alert("Upss. Hubo un error tu consulta no se puedo enviar correctamente. Por favor intenta nuevamente.")</script>';
     echo '<script type="text/javascript">window.location = "./contacto.html"</script>';
 }
 ?>
