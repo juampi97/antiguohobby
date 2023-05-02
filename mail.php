@@ -9,7 +9,7 @@ $telefono = $_POST['telefono'];
 
 $ip = $_SERVER['REMOTE_ADDR'];
 $captcha = $_POST['g-recaptcha-response'];
-$secretkey = "6LeV8UolAAAAAKD4rmOAcTLhUzM8ItIiHNhYqnfF";
+$secretkey = "6LfJvWElAAAAAMhWyohKipw5O_erKPEglulZnuxm";
 $respuesta = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretkey&response=$captcha&remoteip=$ip");
 
 $response = json_decode($respuesta, TRUE);
