@@ -59,7 +59,7 @@ if(isset($_POST['submit'])){
             echo '<script type="text/javascript">window.location = "./index.html"</script>';
           } catch (Exception $e) {
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-            echo '<script type="text/javascript">alert("Upss. Hubo un error tu consulta no se puedo enviar correctamente. Por favor intenta nuevamente.")</script>';
+            echo '<script type="text/javascript">alert("Upss. Hubo un error tu consulta no se puedo enviar correctamente. Por favor completa todos los campos e intenta nuevamente.")</script>';
             echo '<script type="text/javascript">window.location = "./contacto.html"</script>';
         }
     } else{
