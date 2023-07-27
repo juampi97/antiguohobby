@@ -10032,6 +10032,7 @@ ul {
         width: 85%; } }
     .proyectos_container_card {
       width: 45%;
+      max-width: 350px;
       margin: 20px;
       border-radius: 6px;
       overflow: hidden;
