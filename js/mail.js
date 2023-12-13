@@ -57,6 +57,7 @@ const postData = async (captcha) => {
         icon: "success"
       });
       contactForm.reset()
+      location.reload()
     })  
 
   } catch (error) {
